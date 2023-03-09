@@ -93,7 +93,7 @@ NOTE: You also can upload them via `git push` command if you are familiar with t
 
 ## FAQ
 
-### How do I find the link to my Processing sketch?
+### Q: How do I find the link to my Processing sketch?
 
 The link to your Processing sketch will be in the format `https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/`. Replace `[YOUR-GITHUB-USERNAME]` with your GitHub username and `[REPOSITORY-NAME]` with the name of your repository.
 
@@ -105,7 +105,7 @@ Another way:
   `Your site is live at: https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/`
 
 That is your website link.
-### How do I update my sketch on GitHub Pages?
+### Q: How do I update my sketch on GitHub Pages?
 
 To update your Processing sketch on GitHub Pages, simply make changes to your processing pde file, then commit and push your changes to GitHub. 
 
@@ -113,7 +113,7 @@ If you do not know about `push`, then simply edit the yourSketch.pde file from G
 
 GitHub will automatically rebuild your website and your changes should be visible in a few minutes. 
 
-### I want to rename my processing sketch file or create another sketch.
+### Q: I want to rename my processing sketch file or create another sketch.
 
 - If you want to change the filename of your sketch, you need to regenerate the index.html file by following STEP 6. 
 
