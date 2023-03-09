@@ -1,16 +1,95 @@
 # Processing Sketch on a Website
 
+[![Hits](https://hits.sh/github.com/vmsaif/hosting_processing_sketch_on_github_pages_website.svg?label=Visits&color=100b75)](https://hits.sh/github.com/vmsaif/hosting_processing_sketch_on_github_pages_website/)
+
 This repository contains a Processing sketch that can be run in a web browser using GitHub Pages.
 
-## Usage
+# Prerequisite
 
-Follow these steps to use GitHub Pages to host your Processing sketch:
+- `Processing IDE.`
+- `GitHub Account.`
+- The processing sketch must not contain `circle(), rect(), squire()` functions. Use `ellipse(), quad()` instead.
+- Any `import` library is not supported.
+    
+## Instructions
 
-1. Open the GitHub repository that contains your Processing sketch.
-2. Go to the repository's Settings tab and scroll down to the GitHub Pages section.
-3. Under "Source", select "Branch: main" and click Save.
-4. Wait a few minutes for GitHub to build your website. You should see a green message that says "Your site is published at https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/".
-5. Click the link to view your Processing sketch in your web browser.
+### STEP 1: Create a Github Account
+If you have a GitHub account already, you can skip to STEP 2.
+
+- Go to the GitHub homepage at https://github.com/.
+- Click on the Sign up button in the top right corner of this page.
+- Enter your preferred username, email address, and strong password.
+- Click the Create account button.
+- Choose a plan. You can choose the free plan for now.
+- Follow the on-screen steps to complete filling out your personal information and selecting your preferences.
+- Verify your email address by clicking the link that has been sent to you at the email address you have provided.
+
+### STEP 2: Install GitHub Desktop Application.
+If you have a GitHub account already, you can skip to STEP 3.
+- Go to the GitHub Desktop website: https://desktop.github.com/.
+- Click the `Download for [Your Operating System]` button to download the installer.
+- Run the installer and follow the on-screen instructions to install GitHub Desktop.
+- Open GitHub Desktop once the installation is complete.
+- Click the "Sign in to GitHub.com" button and enter your GitHub credentials to log in.
+- After logging in, you'll be prompted to set up your local Git configuration. Follow the prompts to set your name and email address.
+
+### STEP 3: Clone this repository to your computer by following any one of these options:
+
+- Option 1: 
+  Click the green "Code" button on the right side of the repository's GitHub page and select "Open with GitHub Desktop" to open the repository in the GitHub Desktop app. From there, click "Clone" to save the repository to your computer.
+  
+- Option 2: 
+  Open a terminal or command prompt on your computer and run the following command, 
+
+  `git clone https://github.com/vmsaif/hosting_processing_sketch_on_github`
+  
+### STEP 6: Generating the HTML File.
+
+1. Go to the `hosting_processing_sketch_on_github` folder from your computer's file explorer.
+2. Go inside `createHTML` folder. Then open `createHTML.pde` processing sketch.
+3. Set string sketchName with the sketch pde file you want to show on the website.
+4. Click the `run/play` button of the processing IDE. This will create an `index.html` file in the same directory, `createHTML` folder.
+5. Copy the `index.html` file inside your Processing sketch folder. Do not put it inside any subfolder. In other words, your `mySketch.pde` and `index.html` files will be in the same directory.
+
+### STEP 7: Create a New Repository
+
+To host your processing sketch on GitHub Pages, we need a repository and upload the sketch there. If you already have a repository containing your processing sketch pde file, you can skip to STEP 5.
+
+To create a new repository on GitHub. You can do this by following these steps:
+
+- Log in to your GitHub account if you are already not logged in.
+- Click on the `+` icon in the top right corner of the screen. Then select `New repository`.
+- Give your repository a name, For example, `my_awesome_game`, and select `Public`.
+- Check the box that says, `Initialize this repository with a README`.
+- Click the `Create repository` button.
+  
+### STEP 7: Uploading the Files.
+
+In this step, we will upload the sketch and index.html files to our GitHub repository. 
+
+NOTE: You also can upload them via `git push` command if you are familiar with terminals and git commands. If you aren't, you can upload them by following these steps: 
+
+- Go to the repository on GitHub from your browser.
+- Click on the "Add file" dropdown button and select "Upload files".
+- Drag and drop the files, namely `index.html`, and `yourSketch.pde` from your computer.
+- Click on the "Commit changes" button at the bottom to upload the files to the repository.
+
+### STEP 8: Activating the Website Hosting of GitHub Pages.
+
+- Open the GitHub repository that contains your Processing sketch.
+- Go to the repository's Settings tab and scroll down to the GitHub Pages section.
+- Under "Source", select "Branch: main" and click Save.
+- Wait a few minutes for GitHub to build your website. You should see a green message that says "Your site is published at ```https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/".```
+- Click the link to view your Processing sketch in your web browser.
+
+### (Optional) STEP 9: 
+-  For your convenience, You can set the link to your repository's website section. To do that,
+  - Copy the link. (Check the FAQ below if you do not have the link.)
+  - Go to the repository.
+  - Click the `gear/settings` icon at the right side of the screen(right to the about section).
+  - Paste your link on the website box field.
+  - Click `Save changes.`
+  - Now you should be getting a clickable link to your live website which contains your processing sketch.
 
 ## FAQ
 
@@ -18,6 +97,25 @@ Follow these steps to use GitHub Pages to host your Processing sketch:
 
 The link to your Processing sketch will be in the format `https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/`. Replace `[YOUR-GITHUB-USERNAME]` with your GitHub username and `[REPOSITORY-NAME]` with the name of your repository.
 
+Another way:
+- Go to the repository which contains your processing sketch.
+- Go to the repository's `Settings` tab and scroll down to the `Pages` section. 
+- In the middle of the website, you will see 
+  
+  `Your site is live at: https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/`
+
+That is your website link.
 ### How do I update my sketch on GitHub Pages?
 
-To update your Processing sketch on GitHub Pages, simply make changes to your `sketchName` variable in the `index.html` file and commit and push your changes to GitHub. GitHub will automatically rebuild your website and your changes should be visible in a few minutes.
+To update your Processing sketch on GitHub Pages, simply make changes to your processing pde file, then commit and push your changes to GitHub. 
+
+If you do not know about `push`, then simply edit the yourSketch.pde file from GitHub's file editor and then commit. 
+
+GitHub will automatically rebuild your website and your changes should be visible in a few minutes. 
+
+### I want to rename my processing sketch file or create another sketch.
+
+- If you want to change the filename of your sketch, you need to regenerate the index.html file by following STEP 6. 
+
+- If you want to create another new sketch, follow all the steps from STEP 6 to STEP 8-9.
+
