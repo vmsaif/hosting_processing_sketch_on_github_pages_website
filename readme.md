@@ -4,6 +4,10 @@
 
 This repository contains a Processing sketch that can be run in a web browser using GitHub Pages.
 
+# Vocabulary Used
+
+An absolute beginner in Git, GitHub, and programing world.
+
 # Prerequisite
 
 - `Processing IDE.`
@@ -62,7 +66,7 @@ To create a new repository on GitHub. You can do this by following these steps:
 - Give your repository a name, For example, `my_awesome_game`, and select `Public`.
 - Check the box that says, `Initialize this repository with a README`.
 - Click the `Create repository` button.
-  
+
 ### STEP 7: Uploading the Files.
 
 In this step, we will upload the sketch and index.html files to our GitHub repository. 
@@ -90,6 +94,24 @@ NOTE: You also can upload them via `git push` command if you are familiar with t
   - Paste your link on the website box field.
   - Click `Save changes.`
   - Now you should be getting a clickable link to your live website which contains your processing sketch.
+
+### (Optional) STEP 10: Create a README.md
+
+README.md is a file that provides a brief overview of a repository on GitHub. It is typically the first thing that visitors to your repository will see, and it is used to communicate important information about your project, such as its purpose, features, and usage instructions.
+
+A good README.md file is important because it can help attract contributors and users to your project by giving them a clear understanding of what your project is all about and how it can be used. Additionally, a well-written README.md file can also help others understand how they can contribute to your project and become a part of your community.
+
+To create a readme.md for starters:
+
+- Go to [stackedit.io](https://stackSedit.io/app).
+- Click the folder icon/toggle explore from the top left corner. Then Click `New file`.
+- Write `readme` as file name. Then start writing your document just like any other document application like MS-Word. A basic example/template can be found [here](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc).
+- After finishing, Click on the `Toggle sidebar` (The stackedit.io logo) at the top right corner of the webpage.
+- Click `IMPORT/EXPORT`, then click `Export as Markdown.` It should auto-download the `readme.md` file.
+- Then upload the `readme.md` file by following STEP 7.
+
+# More Resources.
+- [Learn Markdown Syntax](https://www.markdowntutorial.com/)
 
 ## FAQ
 
