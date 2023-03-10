@@ -86,7 +86,8 @@ NOTE: You also can upload them via `git push` command if you are familiar with t
 - Wait a few minutes for GitHub to build your website. You should see a green message that says "Your site is published at ```https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/".```
 - Click the link to view your Processing sketch in your web browser.
 
-### (Optional) STEP 9: 
+### (Optional) STEP 9: Make Your Link Easily Accessible
+
 -  For your convenience, You can set the link to your repository's website section. To do that,
   - Copy the link. (Check the FAQ below if you do not have the link.)
   - Go to the repository.
