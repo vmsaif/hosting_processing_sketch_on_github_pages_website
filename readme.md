@@ -39,10 +39,10 @@ If you have a GitHub account already, you can skip to STEP 3.
 
 ### STEP 3: Clone this repository to your computer by following any one of these options:
 
-- Option 1: 
+- Option 1: (If you have never used a terminal)
   Click the green "Code" button on the right side of the repository's GitHub page and select "Open with GitHub Desktop" to open the repository in the GitHub Desktop app. From there, click "Clone" to save the repository to your computer.
   
-- Option 2: 
+- Option 2: (If You know how to use a terminal and git commands.)
   Open a terminal or command prompt on your computer and run the following command, 
 
   `git clone https://github.com/vmsaif/hosting_processing_sketch_on_github`
