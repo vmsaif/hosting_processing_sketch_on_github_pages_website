@@ -6,7 +6,7 @@ This repository contains a Processing sketch that can be run in a web browser us
 
 # Vocabulary Used
 
-An absolute beginner in Git, GitHub, and the programming world.
+For an absolute beginner in Git, GitHub, and the programming world.
 
 # Prerequisite
 
