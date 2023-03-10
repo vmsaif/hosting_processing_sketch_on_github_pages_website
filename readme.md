@@ -13,8 +13,8 @@ For an absolute beginner in Git, GitHub, and the programming world.
 - `Processing IDE.`
 - `GitHub Account.`
 - The processing sketch must not contain `circle(), rect(), squire()` functions. Use `ellipse(), quad()` instead.
-- Any `import` library is not supported.
-    
+- Any `import` library is not supported. See `Unsupported Methods` at the end of this document.
+
 ## Instructions
 
 ### STEP 1: Create a Github Account
@@ -114,6 +114,17 @@ To create a readme.md for starters:
 # More Resources.
 - [Learn Markdown Syntax](https://www.markdowntutorial.com/)
 
+# Unsupported Methods (As I know of Today)
+
+If your sketch has these methods, try to use alternatives. Like ellipse() instead of circle(), or quad() instead of rect().
+
+- rect()
+- circle()
+- squire()
+- import libraries.
+- audio.
+
+If you find more, Let me know by creating an issue [here](https://github.com/vmsaif/hosting_processing_sketch_on_github_pages_website/issues/new). I will then update this list.
 ## FAQ
 
 ### Q: How do I find the link to my Processing sketch?
@@ -136,9 +147,14 @@ If you do not know about `push`, then simply edit the yourSketch.pde file from G
 
 GitHub will automatically rebuild your website and your changes should be visible in a few minutes. 
 
+### Q: My website is live but why my Sketch is not visible?
+
+Most likely your sketch files contain unsupported methods like rect(), circle() or any libraries like audio and so on. 
+
 ### Q: I want to rename my processing sketch file or create another sketch.
 
 - If you want to change the filename of your sketch, you need to regenerate the index.html file by following STEP 6. 
 
 - If you want to create another new sketch, follow all the steps from STEP 6 to STEP 8-9.
+
 
