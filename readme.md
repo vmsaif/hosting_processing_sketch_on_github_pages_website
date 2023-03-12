@@ -34,20 +34,22 @@ If you have a GitHub account already, you can skip to STEP 3.
 - Click the `Download for [Your Operating System]` button to download the installer.
 - Run the installer and follow the on-screen instructions to install GitHub Desktop.
 - Open GitHub Desktop once the installation is complete.
-- Click the "Sign in to GitHub.com" button and enter your GitHub credentials to log in.
+- Click the `Sign in to GitHub.com` button and enter your GitHub credentials to log in.
 - After logging in, you'll be prompted to set up your local Git configuration. Follow the prompts to set your name and email address.
 
-### STEP 3: Clone this repository to your computer by following any one of these options:
+### STEP 3: Clone <ins>THIS</ins> repository to your computer by following any one of these options:
 
 - Option 1: (If you have never used a terminal)
-  Click the green "Code" button on the right side of the repository's GitHub page and select "Open with GitHub Desktop" to open the repository in the GitHub Desktop app. From there, click "Clone" to save the repository to your computer.
+  - Click the green `Code` button on the right side of the repository's GitHub page.
+  - select `Open with GitHub Desktop` to open the repository in the GitHub Desktop app. 
+  - From there, click green `Clone` to save the repository to your computer.
   
 - Option 2: (If You know how to use a terminal and git commands.)
   Open a terminal or command prompt on your computer and run the following command, 
 
   `git clone https://github.com/vmsaif/hosting_processing_sketch_on_github`
   
-### STEP 6: Generating the HTML File.
+### STEP 4: Generating the HTML File.
 
 1. Go to the `hosting_processing_sketch_on_github` folder from your computer's file explorer.
 2. Go inside the `createHTML` folder. Then open `createHTML.pde` processing sketch.
@@ -55,7 +57,7 @@ If you have a GitHub account already, you can skip to STEP 3.
 4. Select the file that contains your processing sketch. 
 5. This will create an `index.html` file in the same directory as your sketch folder.
 
-### STEP 7: Create a New Repository
+### STEP 5: Create a New Repository on GitHub
 
 To host your processing sketch on GitHub Pages, we need a repository and upload the sketch there. **If you already have a repository containing your processing sketch pde file, you can skip to STEP 8.**
 
@@ -67,36 +69,43 @@ To create a new repository on GitHub. You can do this by following these steps:
 - Check the box that says, `Initialize this repository with a README`.
 - Click the `Create repository` button.
 
-### STEP 7: Upload the Files to GitHub.
+### STEP 6: Upload the Files to GitHub.
 
 In this step, we will upload the sketch and index.html files to our GitHub repository. 
 
-NOTE: You also can upload them via the GitHub Desktop Application to push. Another way is, the `git push` command if you are familiar with terminals and git commands. If you aren't, you can upload them by following these steps: 
+NOTE: You also can upload them via the `GitHub Desktop Application` to push. 
+Another way is, the `git push` command if you are familiar with terminals and git commands. If you aren't, you can upload them by following these steps: 
 
 - Go to the repository on GitHub from your browser.
-- Click on the "Add file" dropdown button and select "Upload files".
+- Click on the `Add file` dropdown button and select `Upload files`.
 - Drag and drop the files, namely `index.html`, and `yourSketch.pde` from your computer.
-- Click on the "Commit changes" button at the bottom to upload the files to the repository.
+- Click on the green `Commit changes` button at the bottom to upload the files to the repository.
 
-### STEP 8: Activating the Website Hosting of GitHub Pages.
+### STEP 7: Activating the Website Hosting of GitHub Pages.
 
 - Open the GitHub repository that contains your Processing sketch.
-- Go to the repository's Settings tab and scroll down to the GitHub Pages section.
-- Under "Source", select "Branch: main" and click Save.
-- Wait a few minutes for GitHub to build your website. You should see a green message that says "Your site is published at ```https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/".```
+- Go to the repository's `Settings` tab and 
+- Scroll down to the `Pages` section.
+- Under `Build and deployment` section, under `Branch`, click on `none` and select `main` and click `Save`.
+- Wait a few minutes (approximately 1-2 minutes) for GitHub to build your website. 
+- Refresh your webpage from the browser.
+- You should see a green message that says "Your site is published at 
+
+`https://[YOUR-GITHUB-USERNAME].github.io/[REPOSITORY-NAME]/".`
+  
 - Click the link to view your Processing sketch in your web browser.
 
-### (Optional) STEP 9: Make Your Link Easily Accessible
+### (Optional) STEP 8: Make Your Link Easily Accessible
 
--  For your convenience, You can set the link to your repository's website section. To do that,
-  - Copy the link. (Check the FAQ below if you do not have the link.)
-  - Go to the repository.
-  - Click the `gear/settings` icon at the right side of the screen(right to the about section).
-  - Paste your link on the website box field.
-  - Click `Save changes.`
-  - Now you should be getting a clickable link to your live website which contains your processing sketch.
+For your convenience, You can set the link to your repository's website section. To do that,
 
-### (Optional) STEP 10: Create a README.md
+- Go to the repository.
+- Click the `gear/settings` icon at the right side of the screen(right to the about section).
+- Click the tickbox of `Use your GitHub Pages website`
+- Click `Save changes.`
+- Now you should be getting a clickable link to your live website which contains your processing sketch.
+
+### (Optional) STEP 9: Create a README.md
 
 README.md is a file that provides a brief overview of a repository on GitHub. It is typically the first thing that visitors to your repository will see, and it is used to communicate important information about your project, such as its purpose, features, and usage instructions.
 
@@ -160,7 +169,7 @@ Make sure `your_awesome_sketch.pde` file **AND** the `index.html` files are in t
 
 ### Q: I want to rename my processing sketch file or create another sketch.
 
-- If you want to change the filename of your sketch, you need to regenerate the index.html file by following STEP 6. 
-- If you want to create another new sketch, follow all the steps from STEP 6 to STEP 8-9.
+- If you want to change the filename of your sketch, eg, `your_awesome_sketch.pde` to `your_cool_sketch.pde`, you need to regenerate the index.html file by following STEP 6. 
+- If you want to create another new sketch, follow all the steps from STEP 4 to STEP 7. STEP 8 Optional.
 
 
