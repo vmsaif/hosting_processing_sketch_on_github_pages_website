@@ -13,7 +13,7 @@ For an absolute beginner in Git, GitHub, and the programming world.
 - `Processing IDE.`
 - `GitHub Account.`
 - The processing sketch must not contain `circle(), rect(), squire()` functions. Use `ellipse(), quad()` instead.
-- Any `import` library is not supported. See `Unsupported Methods` at the end of this document.
+- Any `import` library is not supported. See `Unsupported Methods` section at the end of this document.
 
 ## Instructions
 
@@ -21,9 +21,9 @@ For an absolute beginner in Git, GitHub, and the programming world.
 If you have a GitHub account already, you can skip to STEP 2.
 
 - Go to the GitHub homepage at https://github.com/.
-- Click on the Sign up button in the top right corner of this page.
+- Click on the `Sign up` button in the top right corner of this page.
 - Enter your preferred username, email address, and strong password.
-- Click the Create account button.
+- Click the `Create account` button.
 - Choose a plan. You can choose the free plan for now.
 - Follow the on-screen steps to complete filling out your personal information and selecting your preferences.
 - Verify your email address by clicking the link that has been sent to you at the email address you have provided.
@@ -51,13 +51,16 @@ If you have a GitHub account already, you can skip to STEP 3.
 
 1. Go to the `hosting_processing_sketch_on_github` folder from your computer's file explorer.
 2. Go inside `createHTML` folder. Then open `createHTML.pde` processing sketch.
-3. Set string sketchName with the sketch pde file you want to show on the website.
+3. Set the variable `String sketchName` value to the file name you want to show on the website. eg,
+   
+   `String sketchName = myAwesomeSketch.pde`
+
 4. Click the `run/play` button of the processing IDE. This will create an `index.html` file in the same directory, `createHTML` folder.
 5. Copy the `index.html` file inside your Processing sketch folder. Do not put it inside any subfolder. In other words, your `mySketch.pde` and `index.html` files will be in the same directory.
 
 ### STEP 7: Create a New Repository
 
-To host your processing sketch on GitHub Pages, we need a repository and upload the sketch there. If you already have a repository containing your processing sketch pde file, you can skip to STEP 5.
+To host your processing sketch on GitHub Pages, we need a repository and upload the sketch there. **If you already have a repository containing your processing sketch pde file, you can skip to STEP 5.**
 
 To create a new repository on GitHub. You can do this by following these steps:
 
@@ -149,7 +152,7 @@ GitHub will automatically rebuild your website and your changes should be visibl
 
 ### Q: My website is live but why my Sketch is not visible?
 
-Most likely your sketch files contain unsupported methods like rect(), circle() or any libraries like audio and so on. 
+Most likely your sketch files contain unsupported methods like rect(), circle() or any libraries like audio and so on. See `Unsupported Methods` section of this document.
 
 ### Q: I want to rename my processing sketch file or create another sketch.
 

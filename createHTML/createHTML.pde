@@ -1,4 +1,4 @@
-String sketchName = "MONITOR.pde";
+String sketchName = "your_sketch_file_name_here.pde";
 
 void setup() {
   // Set the size of the sketch window
