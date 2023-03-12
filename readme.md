@@ -13,7 +13,7 @@ For an absolute beginner in Git, GitHub, and the programming world.
 - `Processing IDE.`
 - `GitHub Account.`
 - The processing sketch must not contain `circle(), rect(), squire()` functions. Use `ellipse(), quad()` instead.
-- Any `import` library is not supported. See `Unsupported Methods` section at the end of this document.
+- Any `import` library is not supported. See the `Unsupported`` Methods` section at the end of this document.
 
 ## Instructions
 
@@ -71,7 +71,7 @@ To create a new repository on GitHub. You can do this by following these steps:
 
 In this step, we will upload the sketch and index.html files to our GitHub repository. 
 
-NOTE: You also can upload them via `git push` command if you are familiar with terminals and git commands. If you aren't, you can upload them by following these steps: 
+NOTE: You also can upload them via the GitHub Desktop Application to push. Another way is, the `git push` command if you are familiar with terminals and git commands. If you aren't, you can upload them by following these steps: 
 
 - Go to the repository on GitHub from your browser.
 - Click on the "Add file" dropdown button and select "Upload files".
