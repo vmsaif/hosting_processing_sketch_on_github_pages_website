@@ -50,17 +50,14 @@ If you have a GitHub account already, you can skip to STEP 3.
 ### STEP 6: Generating the HTML File.
 
 1. Go to the `hosting_processing_sketch_on_github` folder from your computer's file explorer.
-2. Go inside `createHTML` folder. Then open `createHTML.pde` processing sketch.
-3. Set the variable `String sketchName` value to the file name you want to show on the website. eg,
-   
-   `String sketchName = myAwesomeSketch.pde`
-
-4. Click the `run/play` button of the processing IDE. This will create an `index.html` file in the same directory, `createHTML` folder.
-5. Copy the `index.html` file inside your Processing sketch folder. Do not put it inside any subfolder. In other words, your `mySketch.pde` and `index.html` files will be in the same directory.
+2. Go inside the `createHTML` folder. Then open `createHTML.pde` processing sketch.
+3. Click the `run/play` button of the processing IDE. 
+4. Select the file that contains your processing sketch. 
+5. This will create an `index.html` file in the same directory as your sketch folder.
 
 ### STEP 7: Create a New Repository
 
-To host your processing sketch on GitHub Pages, we need a repository and upload the sketch there. **If you already have a repository containing your processing sketch pde file, you can skip to STEP 5.**
+To host your processing sketch on GitHub Pages, we need a repository and upload the sketch there. **If you already have a repository containing your processing sketch pde file, you can skip to STEP 8.**
 
 To create a new repository on GitHub. You can do this by following these steps:
 
@@ -70,7 +67,7 @@ To create a new repository on GitHub. You can do this by following these steps:
 - Check the box that says, `Initialize this repository with a README`.
 - Click the `Create repository` button.
 
-### STEP 7: Uploading the Files.
+### STEP 7: Upload the Files to GitHub.
 
 In this step, we will upload the sketch and index.html files to our GitHub repository. 
 
@@ -109,7 +106,7 @@ To create a readme.md for starters:
 
 - Go to [stackedit.io](https://stackSedit.io/app).
 - Click the folder icon/toggle explore from the top left corner. Then Click `New file`.
-- Write `readme` as file name. Then start writing your document just like any other document application like MS-Word. A basic example/template can be found [here](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc).
+- Write `readme` as the file name. Then start writing your document just like any other document application like MS-WORD. A basic example/template can be found [here](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc).
 - After finishing, Click on the `Toggle sidebar` (The stackedit.io logo) at the top right corner of the webpage.
 - Click `IMPORT/EXPORT`, then click `Export as Markdown.` It should auto-download the `readme.md` file.
 - Then upload the `readme.md` file by following STEP 7.
@@ -144,20 +141,26 @@ Another way:
 That is your website link.
 ### Q: How do I update my sketch on GitHub Pages?
 
-To update your Processing sketch on GitHub Pages, simply make changes to your processing pde file, then commit and push your changes to GitHub. 
+To update your Processing sketch on GitHub Pages, simply make changes to your your_awesome_sketch.pde file, then commit and push your changes to GitHub. 
 
-If you do not know about `push`, then simply edit the yourSketch.pde file from GitHub's file editor and then commit. 
+If you do not know about `push`, then simply edit your_awesome_sketch.pde file from GitHub's file editor and then commit. 
 
 GitHub will automatically rebuild your website and your changes should be visible in a few minutes. 
 
 ### Q: My website is live but why my Sketch is not visible?
 
-Most likely your sketch files contain unsupported methods like rect(), circle() or any libraries like audio and so on. See `Unsupported Methods` section of this document.
+Most likely your sketch files contain unsupported methods like rect(), circle() or any libraries like audio and so on. See the `Unsupported Methods` section of this document.
+
+### Q: My Sketch is not visible. OR:
+
+- Only showing the list of directories and files. OR:
+- Only showing the content of my readme.md file.
+
+Make sure `your_awesome_sketch.pde` file **AND** the `index.html` files are in the root directory of your repository. This means these two files have to be on the very first page of your repository. They must not be inside any subfolders.
 
 ### Q: I want to rename my processing sketch file or create another sketch.
 
 - If you want to change the filename of your sketch, you need to regenerate the index.html file by following STEP 6. 
-
 - If you want to create another new sketch, follow all the steps from STEP 6 to STEP 8-9.
 
 

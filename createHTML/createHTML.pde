@@ -1,29 +1,59 @@
-String sketchName = "your_sketch_file_name_here.pde"; //DONT FORGET TO PUT THE .pde EXTENSION
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.io.*;
+
+String sketchName;
 
 void setup() {
-  // Set the size of the sketch window
-  size(1, 1); // Use a small size to prevent the sketch window from showing up
+  size(1, 1);
+  selectSketchFile();
+}
 
-  // Create the index.html file
-  PrintWriter writer = createWriter("index.html");
+void selectSketchFile() {
+  JFileChooser fileChooser = new JFileChooser();
+  fileChooser.setDialogTitle("Select Your Sketch File");
+  fileChooser.setFileFilter(new FileNameExtensionFilter("Processing Sketches (*.pde)", "pde"));
+  int result = fileChooser.showOpenDialog(null);
+  if (result == JFileChooser.APPROVE_OPTION) {
+    File sketchFile = fileChooser.getSelectedFile();
+    sketchName = sketchFile.getName();
+    selectFolder();
+  } else if (result == JFileChooser.CANCEL_OPTION) {
+    println("Window was closed or user hit cancel.");
+    exit();
+  }
+}
 
-  // Write the HTML code to the file
-  writer.println("<html>");
-  writer.println("  <head>");
-  writer.println("    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js\"></script>");
-  writer.println("  </head>");
-  writer.println("  <body>");
-  writer.println("    <center>");
-  writer.println("      <canvas data-processing-sources=\"" + sketchName + "\"></canvas>");
-  writer.println("      <br>");
-  writer.println("    </center>");
-  writer.println("  </body>");
-  writer.println("</html>");
-
-  // Close the writer
-  writer.flush();
-  writer.close();
-
-  // Exit the sketch
-  exit();
+void selectFolder() {
+  JFileChooser folderChooser = new JFileChooser();
+  folderChooser.setDialogTitle("Select Folder Containing Your Sketch");
+  folderChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+  int result = folderChooser.showOpenDialog(null);
+  if (result == JFileChooser.APPROVE_OPTION) {
+    File folder = folderChooser.getSelectedFile();
+    String directory = folder.getAbsolutePath();
+    String filePath = directory + File.separator + "index.html";
+    PrintWriter writer = createWriter(filePath);
+    writer.println("<html>");
+    writer.println("  <head>");
+    writer.println("    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js\"></script>");
+    writer.println("  </head>");
+    writer.println("  <body>");
+    writer.println("    <center>");
+    writer.println("      <canvas data-processing-sources=\"" + sketchName + "\"></canvas>");
+    writer.println("      <br>");
+    writer.println("    </center>");
+    writer.println("  </body>");
+    writer.println("</html>");
+    writer.flush();
+    writer.close();
+    JOptionPane.showMessageDialog(null, "index.html created successfully!");
+    exit();
+  } else if (result == JFileChooser.CANCEL_OPTION) {
+    println("Window was closed or user hit cancel.");
+    exit();
+  } else if (result == JFileChooser.ERROR_OPTION) {
+    JOptionPane.showMessageDialog(null, "Error occurred while selecting folder. Please try again.");
+    selectFolder();
+  }
 }
