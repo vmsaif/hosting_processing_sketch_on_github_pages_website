@@ -6,6 +6,11 @@ String sketchName;
 
 void setup() {
   size(1, 1);
+  try {
+    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+  } catch (Exception e) {
+    e.printStackTrace();
+  }
   selectSketchFile();
 }
 
@@ -17,21 +22,7 @@ void selectSketchFile() {
   if (result == JFileChooser.APPROVE_OPTION) {
     File sketchFile = fileChooser.getSelectedFile();
     sketchName = sketchFile.getName();
-    selectFolder();
-  } else if (result == JFileChooser.CANCEL_OPTION) {
-    println("Window was closed or user hit cancel.");
-    exit();
-  }
-}
-
-void selectFolder() {
-  JFileChooser folderChooser = new JFileChooser();
-  folderChooser.setDialogTitle("Select Folder Containing Your Sketch");
-  folderChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-  int result = folderChooser.showOpenDialog(null);
-  if (result == JFileChooser.APPROVE_OPTION) {
-    File folder = folderChooser.getSelectedFile();
-    String directory = folder.getAbsolutePath();
+    String directory = sketchFile.getParent();
     String filePath = directory + File.separator + "index.html";
     PrintWriter writer = createWriter(filePath);
     writer.println("<html>");
@@ -47,13 +38,10 @@ void selectFolder() {
     writer.println("</html>");
     writer.flush();
     writer.close();
-    JOptionPane.showMessageDialog(null, "index.html created successfully!");
+    JOptionPane.showMessageDialog(null, "index.html created successfully!\n\nPath: " + filePath);
     exit();
   } else if (result == JFileChooser.CANCEL_OPTION) {
     println("Window was closed or user hit cancel.");
     exit();
-  } else if (result == JFileChooser.ERROR_OPTION) {
-    JOptionPane.showMessageDialog(null, "Error occurred while selecting folder. Please try again.");
-    selectFolder();
   }
 }
