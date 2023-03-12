@@ -37,7 +37,7 @@ If you have a GitHub account already, you can skip to STEP 3.
 - Click the `Sign in to GitHub.com` button and enter your GitHub credentials to log in.
 - After logging in, you'll be prompted to set up your local Git configuration. Follow the prompts to set your name and email address.
 
-### STEP 3: Clone <ins>THIS</ins> repository to your computer by following any one of these options:
+### STEP 3: Clone [**this**](https://github.com/vmsaif/hosting_processing_sketch_on_github_pages_website) repository to your computer by following any one of these options:
 
 - Option 1: (If you have never used a terminal)
   - Click the green `Code` button on the right side of the repository's GitHub page.
@@ -115,10 +115,10 @@ To create a readme.md for starters:
 
 - Go to [stackedit.io](https://stackSedit.io/app).
 - Click the folder icon/toggle explore from the top left corner. Then Click `New file`.
-- Write `readme` as the file name. Then start writing your document just like any other document application like MS-WORD. A basic example/template can be found [here](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc).
+- Write `readme` as the file name. Then start writing your document just like any other document application like MS-WORD. (A basic example/template can be found [here](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc))
 - After finishing, Click on the `Toggle sidebar` (The stackedit.io logo) at the top right corner of the webpage.
 - Click `IMPORT/EXPORT`, then click `Export as Markdown.` It should auto-download the `readme.md` file.
-- Then upload the `readme.md` file by following STEP 7.
+- Then upload the `readme.md` file by following STEP 6.
 
 # More Resources.
 - [Learn Markdown Syntax](https://www.markdowntutorial.com/)
