@@ -114,7 +114,7 @@ To create a readme.md for starters:
 # More Resources.
 - [Learn Markdown Syntax](https://www.markdowntutorial.com/)
 
-# Unsupported Methods (As I know of Today)
+# Unsupported Methods (As I know Today)
 
 If your sketch has these methods, try to use alternatives. Like ellipse() instead of circle(), or quad() instead of rect().
 
