@@ -86,7 +86,7 @@ Another way is, the `git push` command if you are familiar with terminals and gi
 - Open the GitHub repository that contains your Processing sketch.
 - Go to the repository's `Settings` tab and 
 - Scroll down to the `Pages` section.
-- Under `Build and deployment` section, under `Branch`, click on `none` and select `main` and click `Save`.
+- Under the `Build and deployment` section, under `Branch`, click on `none` and select `main` and click `Save`.
 - Wait a few minutes (approximately 1-2 minutes) for GitHub to build your website. 
 - Refresh your webpage from the browser.
 - You should see a green message that says "Your site is published at 
