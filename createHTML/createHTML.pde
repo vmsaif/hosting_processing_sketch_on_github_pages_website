@@ -1,4 +1,4 @@
-String sketchName = "your_sketch_file_name_here.pde";
+String sketchName = "your_sketch_file_name_here.pde"; //DONT FORGET TO PUT THE .pde EXTENSION
 
 void setup() {
   // Set the size of the sketch window
