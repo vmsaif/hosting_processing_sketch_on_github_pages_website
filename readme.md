@@ -113,7 +113,7 @@ A good README.md file is important because it can help attract contributors and 
 
 To create a readme.md for starters:
 
-- Go to [stackedit.io](https://stackSedit.io/app).
+- Go to [stackedit.io](https://stackedit.io/app).
 - Click the folder icon/toggle explore from the top left corner. Then Click `New file`.
 - Write `readme` as the file name. Then start writing your document just like any other document application like MS-WORD. (A basic example/template can be found [here](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc))
 - After finishing, Click on the `Toggle sidebar` (The stackedit.io logo) at the top right corner of the webpage.
